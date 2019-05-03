@@ -261,6 +261,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }
+ 
   i.fa.fa-cog {
     height: 34px;
     margin-top: 8px;
@@ -473,9 +474,30 @@
     background: #314662;
     color: #fff;
     padding: 2em 2em 1em 2em;
+} 
+div#headingThree {
+  position: relative;
+  background: #314662;
+  color: #fff;
+  padding: 2em 2em 1em 2em;
 }
+div#headingfour {
+  position: relative;
+  background: #314662;
+  color: #fff;
+  padding: 2em 2em 1em 2em;
+}
+div#headingfive {
+  position: relative;
+  background: #314662;
+  color: #fff;
+  padding: 2em 2em 1em 2em;
+}
+
+
 .panel.panel-default {
   border: none;
+  /* border-bottom: 1px solid #142333 !important; */
 }
 h4.panel-title a:hover {
   text-decoration: none !important;

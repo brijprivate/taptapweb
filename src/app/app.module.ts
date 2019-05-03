@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppuserComponent } from './dashboard/appuser/appuser.component';
+import { ChartsComponent } from './dashboard/charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppuserComponent } from './dashboard/appuser/appuser.component';
     LoginComponent,
     SidenavComponent,
     DashboardComponent,
-    AppuserComponent
+    AppuserComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,

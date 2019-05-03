@@ -1,0 +1,14 @@
+.cards{
+    height: 100px;
+    width: 100%;
+    background: #fff;
+}
+.main{
+    text-align: center;
+}
+canvas#myChart {
+    margin: 0 auto;
+}
+.model {
+    background: #fff;
+}

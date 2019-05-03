@@ -2,11 +2,13 @@
 <section class="dashboard">
   <div class="row">
     <div class="col-md-12" id="padding-o">
-      <div class="col-md-3" id="padding-o">
+      <div class="col-md-3"  id="padding-o" style="width:25%;float: left;">
      <app-sidenav></app-sidenav>
       </div>
-      <div class="col-md-9" id="padding-o">
-<app-appuser *ngIf="tapuser"></app-appuser>
+      <div class="col-md-9" id="padding-o"style="width:75%;float: left;">
+<!-- <app-appuser *ngIf="tapuser"></app-appuser> -->
+        <app-charts></app-charts>
+
       </div>
     </div>
   </div>
