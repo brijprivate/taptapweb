@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppuserComponent } from './dashboard/appuser/appuser.component';
 import { ChartsComponent } from './dashboard/charts/charts.component';
 import { NewloginComponent } from './newlogin/newlogin.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewloginComponent } from './newlogin/newlogin.component';
     DashboardComponent,
     AppuserComponent,
     ChartsComponent,
-    NewloginComponent
+    NewloginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

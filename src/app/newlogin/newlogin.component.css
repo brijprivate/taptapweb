@@ -179,12 +179,12 @@
     text-align: center;
   }
   
-  label {
+  /* label {
     display: block;
     width: 260px;
     margin: 25px auto 0;
     text-align: center;
-  }
+  } */
   label span {
     font-size: 12px;
     color: #cfcfcf;
@@ -198,7 +198,7 @@
     padding-bottom: 5px;
     font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    text-align: center;
+    /* text-align: center; */
   }
   
   .forgot-pass {
@@ -265,3 +265,6 @@
     justify-content: center;
     align-items: center;
 }  
+.form.sign-up .row {
+  margin-bottom: 0 !important;
+}
