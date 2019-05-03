@@ -258,6 +258,10 @@
     right: 5px;
   }
   section.uLogin {
-    background: purple;
+    background: #2e89b2;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }  

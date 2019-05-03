@@ -12,3 +12,8 @@ canvas#myChart {
 .model {
     background: #fff;
 }
+canvas#myChart {
+    height: 70vh !important;
+    width: 100% !important;
+    margin: 0 auto;
+}

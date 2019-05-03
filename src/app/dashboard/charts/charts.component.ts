@@ -26,24 +26,54 @@ export class ChartsComponent implements OnInit {
     this.canvas = document.getElementById('myChart');
     this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
-      type: 'pie',
-      data: {
-          labels: ["New", "In Progress", "On Hold"],
+      type: 'line',
+        data: {
+          labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
           datasets: [{
-              label: '# of Votes',
-              data: [1,2,3],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        responsive: false,
-        display:true
-      }
+            data: [0, 1, 4, 6, 6, 4, 1, 0],
+            label: "Africa",
+            borderColor: "#fff0",
+            backgroundColor: "rgba(241, 169, 160, 0.5)",
+
+            fill: true
+          }, {
+            data: [0, 0, 0, 0, 5, 9, 6, 3, 0],
+            label: "india",
+            borderColor: "#fff0",
+            backgroundColor: "rgba(38, 194, 129, 0.5)",
+
+            fill: true
+          },]
+        },
+        options: {
+          responsive: true,
+          display:true,
+          legend: {
+            display: false,
+
+          },
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
+          scales: {
+            xAxes: [{
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              }
+            }],
+            yAxes: [{
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              }
+            }]
+          },
+          title: {
+            display: false,
+            text: 'TapTap data'
+          }
+        }
     });
   }
 
