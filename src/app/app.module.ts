@@ -8,6 +8,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppuserComponent } from './dashboard/appuser/appuser.component';
 import { ChartsComponent } from './dashboard/charts/charts.component';
+import { NewloginComponent } from './newlogin/newlogin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChartsComponent } from './dashboard/charts/charts.component';
     SidenavComponent,
     DashboardComponent,
     AppuserComponent,
-    ChartsComponent
+    ChartsComponent,
+    NewloginComponent
   ],
   imports: [
     BrowserModule,

@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewloginComponent } from './newlogin/newlogin.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
  { path: 'login', component: LoginComponent }, 
+ { path: 'logina', component: NewloginComponent },
  { path: 'sidenav', component: SidenavComponent },
  { path: 'dashboard', component: DashboardComponent },
  
