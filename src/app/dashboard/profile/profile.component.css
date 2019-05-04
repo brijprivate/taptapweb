@@ -63,9 +63,16 @@ body{
     font-weight:600;
     border: none;
 }
-.profile-head .nav-tabs .nav-link.active{
+li.nav-item.active{
     border: none;
     border-bottom:2px solid #0062cc;
+}
+ul.nav.nav-tabs li {
+    width: 50%;
+    text-align: center;
+}
+ul.nav.nav-tabs {
+    width: 100%;
 }
 .profile-work{
     padding: 14%;
@@ -88,8 +95,43 @@ body{
 }
 .profile-tab label{
     font-weight: 600;
+    margin-top: 20px;
 }
 .profile-tab p{
     font-weight: 600;
     color: #0062cc;
+}
+
+
+
+.inputs input:read-only {
+    font-weight: 600;
+    color: #0062cc;
+    font-size: 15px !important;
+    border: none !important;
+}
+.inputs input {
+    font-weight: 600;
+    color: #0062cc;
+    font-size: 15px !important;
+    border-bottom: 2px solid #0062cc !important;
+}
+button.buton {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #222;
+    border-radius: 4px;
+    outline: none;
+    padding: 3px 14px;
+}
+.twobtns {
+    text-align: center;
+}
+.twobtns button {
+    background: transparent;
+    border: 1px solid #222;
+    width: 31%;
+    height: 30px;
+    border-radius: 4px;
+    margin: 0 5px;
 }
