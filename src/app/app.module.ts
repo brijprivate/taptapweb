@@ -13,6 +13,7 @@ import { TaptaphistoryComponent } from './dashboard/taptaphistory/taptaphistory.
 import { SearchComponent } from './dashboard/search/search.component';
 import { DeviceComponent } from './dashboard/device/device.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { RegistrationComponent } from './registration/registration.component';
 
   @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
     SearchComponent,
     DeviceComponent,
     ProfileComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

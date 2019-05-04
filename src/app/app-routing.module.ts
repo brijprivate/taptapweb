@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewloginComponent } from './newlogin/newlogin.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
- { path: 'login', component: LoginComponent }, 
- { path: 'logina', component: NewloginComponent },
+ { path: 'login', component: NewloginComponent },
  { path: 'sidenav', component: SidenavComponent },
  { path: 'dashboard', component: DashboardComponent },
+ { path: 'register', component: RegistrationComponent },
+ 
  
 ];
 @NgModule({
