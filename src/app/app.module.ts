@@ -12,9 +12,10 @@ import { NewloginComponent } from './newlogin/newlogin.component';
 import { TaptaphistoryComponent } from './dashboard/taptaphistory/taptaphistory.component';
 import { SearchComponent } from './dashboard/search/search.component';
 import { DeviceComponent } from './dashboard/device/device.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
 
-@NgModule({
-  declarations: [
+  @NgModule({
+    declarations: [
     AppComponent,
     LoginComponent,
     SidenavComponent,
@@ -24,7 +25,8 @@ import { DeviceComponent } from './dashboard/device/device.component';
     NewloginComponent,
     TaptaphistoryComponent,
     SearchComponent,
-    DeviceComponent
+    DeviceComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
