@@ -22,3 +22,14 @@ a.floatEa:hover{
 .my-float{
 	margin-top:22px;
 }
+.ft h1 {
+    font-size: 34px;
+    padding: 19px 0;
+    padding-left: 20px;
+    margin:0;
+    text-align: left;
+  }
+
+.ft {
+    background: #fff;
+}
