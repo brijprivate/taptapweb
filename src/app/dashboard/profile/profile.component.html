@@ -1,174 +1,139 @@
 <div class="ft">
     <div class="row">
 
-      <div class="col-md-12">
-        <h1>Profile</h1>
-      </div>
+        <div class="col-md-12">
+            <h1>Profile</h1>
+        </div>
     </div>
 
-  </div>
+</div>
 <div class=" emp-profile">
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="profile-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
-                        alt="" />
-                    <div class="file btn btn-lg btn-primary">
-                        Change Photo
-                        <input type="file" name="file" />
-                    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile-img">
+                <img [src]="display_image" alt="profile image" />
+                <div class="file btn btn-lg btn-primary  " *ngIf="!readonly" >
+                    Change Photo
+                    <input (change)="selectFile($event)" id="fileInput" type="file" accept="image/*" 
+                        name="file" />
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="profile-head">
-                    <h5>
-                        Kshiti Ghelani
-                    </h5>
-                    <h6>
-                        Web Developer and Designer
-                    </h6>
-                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                    <ul class="nav nav-tabs" >
-                        <li class="nav-item  active">
-                            <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">About</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Timeline</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <!-- <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" /> -->
-                <button *ngIf="readonly" class="buton" (click)="editprofile()">Edit Profile </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="profile-work">
-                    <p>WORK LINK</p>
-                    <a href="">Website Link</a><br />
-                    <a href="">Bootsnipp Profile</a><br />
-                    <a href="">Bootply Profile</a>
-                    <p>SKILLS</p>
-                    <a href="">Web Designer</a><br />
-                    <a href="">Web Developer</a><br />
-                    <a href="">WordPress</a><br />
-                    <a href="">WooCommerce</a><br />
-                    <a href="">PHP, .Net</a><br />
-                </div>
-            </div>
-            <div class="col-md-8 inputs">
-                <div class="tab-content profile-tab" id="myTabContent">
-                    <div class="tab-pane fade  active in" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>User Id</label>
-                            </div>
-                            <div class="col-md-6">
-                              
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Name</label>
-                            </div>
-                            <div class="col-md-6">
-                              
-                                <input type="text" value="Kshiti Ghelani" [readonly]="readonly"  >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Email</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-                             
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Phone</label>
-                            </div>
-                            <div class="col-md-6">
-                                    <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-
-                               
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Profession</label>
-                            </div>
-                            <div class="col-md-6">
-                                    <input type="text" value="Web Developer and Designer" [readonly]="readonly" >
-
-                              
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Experience</label>
-                            </div>
-                            <div class="col-md-6">
-                                    <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-
-                                
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Hourly Rate</label>
-                            </div>
-                            <div class="col-md-6">
-                               
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Total Projects</label>
-                            </div>
-                            <div class="col-md-6">
-                                
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>English Level</label>
-                            </div>
-                            <div class="col-md-6">
-                                
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Availability</label>
-                            </div>
-                            <div class="col-md-6">
-                             
-                                <input type="text" value="kshitighelani@gmail.com" [readonly]="readonly" >
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-               <div class="twobtns" *ngIf="!readonly">
-                   <button>Save</button>
-                   <button (click)=cancel()>Cancel</button>
-               </div>
+        <div class="col-md-6">
+            <div class="profile-head">
+                <h5>
+                    {{name}}
+                </h5>
+                <h6>
+                    Web Developer and Designer
+                </h6>
+                <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item  active">
+                        <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Personal</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Other</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    
+        <div class="col-md-2">
+            <!-- <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" /> -->
+            <button *ngIf="readonly" class="buton" (click)="editprofile()">Edit Profile </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile-work">
+                <p>WORK LINK</p>
+                <a href="">Website Link</a><br />
+                <a href="">Bootsnipp Profile</a><br />
+                <a href="">Bootply Profile</a>
+                <p>SKILLS</p>
+                <a href="">Web Designer</a><br />
+                <a href="">Web Developer</a><br />
+                <a href="">WordPress</a><br />
+                <a href="">WooCommerce</a><br />
+                <a href="">PHP, .Net</a><br />
+            </div>
+        </div>
+        <div class="col-md-8 inputs">
+            <div class="tab-content profile-tab" id="myTabContent">
+                <div class="tab-pane fade  active in" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Name</label>
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" [(ngModel)]="name" [readonly]="readonly">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>City</label>
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="text" [(ngModel)]="city" [readonly]="readonly">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Address</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" [(ngModel)]="address" [readonly]="readonly">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Zip</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" [(ngModel)]="zip" [readonly]="readonly">
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Country</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" [(ngModel)]="country" [readonly]="readonly">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Website</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" [(ngModel)]="website" [readonly]="readonly">
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="twobtns" *ngIf="!readonly">
+        <button  (click)=save()>Save</button>
+        <button (click)=cancel()>Cancel</button>
+    </div>
 </div>

@@ -9,12 +9,13 @@
       <div class="col-md-9" id="padding-o">
           <!-- style="width:75%;float: left;" -->
         <!-- <app-appuser ></app-appuser> -->
-        <app-charts *ngIf="tapchart"></app-charts>
-        <app-taptaphistory *ngIf="tapuser"></app-taptaphistory>
-        <app-profile *ngIf="tapprofile"></app-profile>
-        <app-search *ngIf="tapsearch"></app-search>
-        <app-device *ngIf="tapdevice"></app-device>
-        <app-time *ngIf="taptime"></app-time>
+       
+        <app-charts *ngIf="sharenav=='chart'"></app-charts>
+        <app-taptaphistory *ngIf="sharenav=='taphistory'"></app-taptaphistory>
+        <app-profile *ngIf="sharenav=='Profile'"></app-profile>
+        <app-search *ngIf="sharenav=='search'"></app-search>
+        <app-device *ngIf="sharenav=='device'"></app-device>
+        <app-time *ngIf="sharenav=='time'"></app-time>
 
       </div>
     </div>

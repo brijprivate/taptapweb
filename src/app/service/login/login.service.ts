@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
+import { map } from 'rxjs/operators';
+
 let baseURL = 'http://ec2-18-225-10-142.us-east-2.compute.amazonaws.com:5450/'
 
 @Injectable({
@@ -10,10 +12,12 @@ export class LoginService {
 
   public baseURL: string = "ec2-18-225-10-142.us-east-2.compute.amazonaws.com:5450/";
   headers: any;
+  userid: string;
 
   constructor(private http: HttpClient) {
     let headers = new HttpHeaders();
     this.headers = headers.set('Content-Type', 'application/json');
+    this.userid=localStorage.getItem('userid')
   }
 
   login(data) {
@@ -32,6 +36,29 @@ export class LoginService {
   }
   register(data) {
     return this.http.post(baseURL + 'user/sendcode', data);
+  }
+
+  saveprofile(data) {
+    return this.http.put(baseURL + 'user/updateprofile?id='+(this.userid), data);
+  }
+  getdevide(){
+    return this.http.get(baseURL + 'device/pairedList?owner='+this.userid);
+
+  }
+  
+  upload(file: any) {
+    let _base = this;
+    return new Promise(function (resolve, reject) {
+
+      _base.http.post(baseURL + 'file/upload', file)
+        .pipe(map(res => res))
+        .subscribe(function (success) {
+          resolve(success);
+        }, function (error) {
+          reject(error);
+        });
+
+    });
   }
   // login(data: any) {
   //   let _base = this;

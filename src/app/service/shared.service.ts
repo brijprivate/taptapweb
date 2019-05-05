@@ -7,35 +7,24 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SharedService {
   dashboardContent:BehaviorSubject<any> = new BehaviorSubject({});
-  taptimeContent:BehaviorSubject<any> = new BehaviorSubject({});
-  tapchartContent:BehaviorSubject<any> = new BehaviorSubject({});
-  tapprofileContent:BehaviorSubject<any> = new BehaviorSubject({});
-  tapsearchContent:BehaviorSubject<any> = new BehaviorSubject({});
-  tapdeviceContent:BehaviorSubject<any> = new BehaviorSubject({});
+  abcd:BehaviorSubject<any> = new BehaviorSubject({});
+  profiledata:BehaviorSubject<any> = new BehaviorSubject({});
+
   constructor() { }
   dashboardtoggle(params){
     this.dashboardContent.next(params)  
     console.log("hi");
   }
-  timetoggle(params){
-    this.taptimeContent.next(params)  
-    console.log("hi");
+ 
+
+  abc(params){
+    this.abcd.next(params)  
+    console.log("hi there");
   }
-  charttoggle(params){
-    this.tapchartContent.next(params)  
-    console.log("hi");
+  profile(params){
+    this.profiledata.next(params)  
+    console.log("hiddd");
   }
-  profiletoggle(params){
-    this.tapprofileContent.next(params)  
-    console.log("hi");
-  }
-  searchtoggle(params){
-    this.tapsearchContent.next(params)  
-    console.log("hi");
-  }
-  devicetoggle(params){
-    this.tapdeviceContent.next(params)  
-    console.log("hi");
-  }
+
 }
 

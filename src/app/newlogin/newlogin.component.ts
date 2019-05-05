@@ -32,7 +32,7 @@ export class NewloginComponent implements OnInit {
       something=result
       console.log('login', something.user._id);
       localStorage.setItem('userid', something.user._id);
-
+      _base.router.navigateByUrl('/dashboard');
     },
       err => {
         console.log(err);
