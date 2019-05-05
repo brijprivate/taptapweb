@@ -287,7 +287,7 @@
   @media (min-width: 768px) {
     .navbar-fixed-left,
     .navbar-fixed-right {
-      width: 23vw;
+      width: 25%;
       height: 100vh;
       border-radius: 0;
     }
