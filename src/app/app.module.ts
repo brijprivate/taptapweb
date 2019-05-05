@@ -13,6 +13,7 @@ import { SearchComponent } from './dashboard/search/search.component';
 import { DeviceComponent } from './dashboard/device/device.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { TimeComponent } from './dashboard/time/time.component';
 
   @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { RegistrationComponent } from './registration/registration.component';
     DeviceComponent,
     ProfileComponent,
     RegistrationComponent,
+    TimeComponent,
   ],
   imports: [
     BrowserModule,

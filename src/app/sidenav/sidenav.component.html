@@ -33,7 +33,7 @@
                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                            <ul class="nav accordionae">
-                              <li><a href="#">profile</a></li>
+                              <li (click)="tapprofile()"><a>Profile</a></li>
                               <!-- <li><a href="#">item 2</a></li> -->
    
                            </ul>
@@ -86,9 +86,9 @@
                               <div class="panel-body">
                                  <ul class="nav accordionae">
       
-                                    <li class="order"><i class="fa fa-sticky-note" aria-hidden="true"></i> TapTap Charts</li>
+                                    <li class="order" (click)="tapChart()"><i class="fa fa-sticky-note" aria-hidden="true"></i> TapTap Charts</li>
       
-                                    <li class="order"> <i class="fa fa-sliders" aria-hidden="true"></i>TapTap history</li>
+                                    <li class="order" (click)="taphistory()"> <i class="fa fa-sliders" aria-hidden="true"></i>TapTap history</li>
                                     
                                  </ul>
                               </div>
@@ -96,7 +96,7 @@
                         </div>
                      
 
-                        <div class="panel-heading" role="tab" id="headingfour">
+                        <div class="panel-heading" role="tab" id="headingfour" (click)="tapsearch()">
                               <h4 class="panel-title">
                                  <a >
       
@@ -118,9 +118,9 @@
                                  <div class="panel-body">
                                     <ul class="nav accordionae">
          
-                                       <li class="order"><i class="fa fa-sticky-note" aria-hidden="true"></i> Manage Devices</li>
+                                       <li class="order" (click)="tapdevice()"><i class="fa fa-sticky-note" aria-hidden="true"></i> Manage Devices</li>
          
-                                       <li class="order"> <i class="fa fa-sliders" aria-hidden="true"></i>Time</li>
+                                       <li class="order" (click)="taptime()"> <i class="fa fa-sliders" aria-hidden="true"></i>Time</li>
                                        <li class="order"> <i class="fa fa-sliders" aria-hidden="true"></i>Milage</li>
          
                                     </ul>
