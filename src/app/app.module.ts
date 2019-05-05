@@ -13,6 +13,8 @@ import { SearchComponent } from './dashboard/search/search.component';
 import { DeviceComponent } from './dashboard/device/device.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
   @NgModule({
     declarations: [
@@ -30,7 +32,9 @@ import { RegistrationComponent } from './registration/registration.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

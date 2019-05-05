@@ -1,4 +1,5 @@
 <!-- registration -->
+
 <section class="register">
     <div class="form-body">
         <div class="website-logo">
@@ -29,14 +30,14 @@
                         <div class="page-links">
                             <a href="#">Login</a><a href="#" class="active">Register</a>
                         </div>
-                        <form>
-                            <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                       
+                            <input class="form-control" [(ngModel)]="regdata.name" type="text" name="name" placeholder="Full Name" required>
+                            <input class="form-control"  [(ngModel)]="regdata.email" type="email" name="email" placeholder="E-mail Address" required>
+                            <input class="form-control" [(ngModel)]="regdata.password" type="password" name="password" placeholder="Password" required>
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn" (click)="register()">Register</button>
                             </div>
-                        </form>
+                        
 
                         <div class="other-links">
                             <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
@@ -54,14 +55,14 @@
                         <div class="page-links">
                             <a href="#">Register</a><a href="#" class="active">OTP</a>
                         </div>
-                        <form>
-                            <input class="form-control" type="text" name="name" placeholder="OTP" >
+                        <!-- <form> -->
+                            <input [(ngModel)]="code" class="form-control" type="text" name="name" placeholder="OTP" >
                             <!-- <input class="form-control" type="email" name="email" placeholder="E-mail Address" required> -->
                             <!-- <input class="form-control" type="password" name="password" placeholder="Password" required> -->
                             <div class="form-button">
-                                <button id="submit" type="submit" class="ibtn">Submit</button>
+                                <button id="submit" type="submit" class="ibtn" (click)="verify()">Submit</button>
                             </div>
-                        </form>
+                        <!-- </form> -->
 
                         <div class="other-links">
                             <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
