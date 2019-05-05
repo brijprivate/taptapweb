@@ -15,6 +15,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { TimeComponent } from './dashboard/time/time.component';
 
   @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     DeviceComponent,
     ProfileComponent,
     RegistrationComponent,
+    TimeComponent,
   ],
   imports: [
     BrowserModule,

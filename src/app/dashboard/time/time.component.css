@@ -1,13 +1,10 @@
-/* user order */
+/* record order */
 .ft h1 {
     font-size: 34px;
     padding: 19px 0;
     padding-left: 20px;
     margin:0;
   }
-section.corder {
-    /* margin-left: -2em; */
-}
 .ft {
     background: #fff;
 }
@@ -100,7 +97,7 @@ button.addItema i {
     border: none;
 }
 .card.margina {
-    margin: 2em 1em;
+    margin:3em;
     box-shadow: none;
     border-radius: 5px;
 }
@@ -158,7 +155,8 @@ div#accountModal .row {
     margin: 0;
 }
 div#accountModal .input-field {
-    margin: 1em 0 0 0;
+    /* margin: 1em 0 0 0; */
+    margin: 0;
 }
 div#accountModal .modal-footer {
     text-align: center;
@@ -212,12 +210,29 @@ div#accountModal i.fa.fa-question-circle-o {
     font-size: 15px;
     margin-left: 10px;
 }
-div#accountModal {
-    max-height: 83%;
-}
 div#accountModal .modal-header {
     padding-top: 0;
 }
-
+div#accountModal {
+    max-height: 50%;
+    width: 39%;
+}
+p.modalAe {
+    margin: 13px 0 4px 0;
+}
 /* modal css */
-/* order css */
+/* Responsive css */
+@media only screen and (min-width:320px) and (max-width: 767px){
+    div#accountModal {
+        max-height: 60%;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    div#accountModal{
+        max-height: 30%;
+        width: 68%;
+    }
+}
+/* Responsive css */
+/* record css */

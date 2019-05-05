@@ -2,17 +2,19 @@
 <section class="dashboard">
   <div class="row">
     <div class="col-md-12" id="padding-o">
-      <div class="col-md-3"  id="padding-o" style="width:25%;float: left;">
+      <div class="col-md-3"  id="padding-o">
+          <!-- style="width:25%;float: left;" -->
      <app-sidenav></app-sidenav>
       </div>
-      <div class="col-md-9" id="padding-o"style="width:75%;float: left;">
-<!-- <app-appuser *ngIf="tapuser"></app-appuser> -->
-        <!-- <app-charts></app-charts> -->
-        <!-- <app-taptaphistory></app-taptaphistory> -->
+      <div class="col-md-9" id="padding-o">
+          <!-- style="width:75%;float: left;" -->
         <!-- <app-appuser ></app-appuser> -->
-        <app-search></app-search>
-        <!-- <app-device></app-device> -->
-        <!-- <app-profile></app-profile> -->
+        <app-charts *ngIf="tapchart"></app-charts>
+        <app-taptaphistory *ngIf="tapuser"></app-taptaphistory>
+        <app-profile *ngIf="tapprofile"></app-profile>
+        <app-search *ngIf="tapsearch"></app-search>
+        <app-device *ngIf="tapdevice"></app-device>
+        <app-time *ngIf="taptime"></app-time>
 
       </div>
     </div>

@@ -13,7 +13,13 @@ canvas#myChart {
     background: #fff;
 }
 canvas#myChart {
-    height: 70vh !important;
+    height: 50vh !important;
     width: 100% !important;
     margin: 0 auto;
+}
+.row.ea {
+    margin: 2em;
+}
+.model {
+    margin: 3em;
 }
