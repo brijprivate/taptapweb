@@ -16,6 +16,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { TimeComponent } from './dashboard/time/time.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
   @NgModule({
     declarations: [
@@ -36,7 +38,13 @@ import { TimeComponent } from './dashboard/time/time.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      timeOut:2000,
+      positionClass:'toast-top-right',
+      preventDuplicates:true
+    }) // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]

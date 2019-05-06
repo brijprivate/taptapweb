@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../service/login/login.service';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-registration',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
 export class RegistrationComponent implements OnInit {
   public show: boolean = true;
   public hide: boolean = false;
+  public loader :boolean = false;
   regdata = {
     name: '',
     email: '',
@@ -18,17 +20,21 @@ export class RegistrationComponent implements OnInit {
   };
   code:number;
 
-  constructor(public api: LoginService, private router: Router) { }
+  constructor(public api: LoginService, private router: Router,private toastr: ToastrService) { }
   register() {
 
     this.show = false;
     this.hide = true;
-
+this.loader=true;
     console.log(this.regdata)
     this.api.register(this.regdata).subscribe(result => {
+      this.toastr.success('Welcome!', 'Enter OTP'),
       console.log('register', result)
+      this.loader=false;
     },
       err => {
+        this.toastr.error('Error!', 'Server Error'),
+        this.loader=false;
         console.log(err)
       })
   }
@@ -39,6 +45,7 @@ export class RegistrationComponent implements OnInit {
     }
     console.log(data);
     this.api.verify(this.regdata).subscribe(result => {
+      this.toastr.success('Welcome!', 'Successfully Registered'),
       console.log('verify', result)
     },
       err => {
